@@ -1,0 +1,40 @@
+{
+    "name": "your-org/metric-runner",
+    "description": "SQL-first analytics metric runner for Laravel with ClickHouse support",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourOrg\\MetricRunner\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YourOrg\\MetricRunner\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YourOrg\\MetricRunner\\MetricRunnerServiceProvider"
+            ],
+            "aliases": {
+                "MetricRunner": "YourOrg\\MetricRunner\\Facades\\MetricRunner"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}

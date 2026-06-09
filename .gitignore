@@ -1,0 +1,26 @@
+# Dependencies
+/vendor
+composer.lock
+
+# Environment
+.env
+.env.backup
+.env.production
+.phpunit.result.cache
+.pest_tracker.cache
+
+# IDEs and Editors
+/.idea
+/.vscode
+*.swp
+*.swo
+.project
+.settings
+.buildpath
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker-data/
