@@ -1,8 +1,8 @@
 <?php
 
-namespace YourOrg\MetricRunner\DTO;
+namespace Njames\MetricRunner\DTO;
 
-use YourOrg\MetricRunner\Exceptions\InvalidMetricException;
+use Njames\MetricRunner\Exceptions\InvalidMetricException;
 
 final class MetricDefinition
 {

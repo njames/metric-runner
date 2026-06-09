@@ -1,13 +1,13 @@
 <?php
 
-namespace YourOrg\MetricRunner;
+namespace Njames\MetricRunner;
 
 use Illuminate\Support\ServiceProvider;
-use YourOrg\MetricRunner\Console\Commands\ListMetricsCommand;
-use YourOrg\MetricRunner\Console\Commands\RunMetricCommand;
-use YourOrg\MetricRunner\Console\Commands\ValidateMetricsCommand;
-use YourOrg\MetricRunner\Support\ClickHouseClient;
-use YourOrg\MetricRunner\Support\MetricRegistry;
+use Njames\MetricRunner\Console\Commands\ListMetricsCommand;
+use Njames\MetricRunner\Console\Commands\RunMetricCommand;
+use Njames\MetricRunner\Console\Commands\ValidateMetricsCommand;
+use Njames\MetricRunner\Support\ClickHouseClient;
+use Njames\MetricRunner\Support\MetricRegistry;
 
 class MetricRunnerServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-use YourOrg\MetricRunner\DTO\MetricDefinition;
+use Njames\MetricRunner\DTO\MetricDefinition;
 
 it('parses frontmatter from a sql file', function () {
     $tmpFile = tempnam(sys_get_temp_dir(), 'metric_') . '.sql';

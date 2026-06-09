@@ -1,11 +1,11 @@
 <?php
 
-namespace YourOrg\MetricRunner\Support;
+namespace Njames\MetricRunner\Support;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 use Illuminate\Support\Collection;
-use YourOrg\MetricRunner\Exceptions\ClickHouseQueryException;
+use Njames\MetricRunner\Exceptions\ClickHouseQueryException;
 
 class ClickHouseClient
 {

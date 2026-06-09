@@ -32,7 +32,7 @@ Metrics are `.sql` files stored in the configured `metrics_path`.
 ### Architecture
 - **Surgical Edits:** When modifying, prioritize minimal changes that preserve existing patterns.
 - **DTOs:** All metric data should flow through `MetricDefinition` and `MetricResult` DTOs.
-- **Exceptions:** Use the `YourOrg\MetricRunner\Exceptions` namespace for all package-specific errors.
+- **Exceptions:** Use the `Njames\MetricRunner\Exceptions` namespace for all package-specific errors.
 
 ### Testing & Validation
 - **Pest:** All new features must have corresponding Pest tests in `tests/Unit`.

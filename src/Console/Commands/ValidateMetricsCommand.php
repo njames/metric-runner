@@ -1,10 +1,10 @@
 <?php
 
-namespace YourOrg\MetricRunner\Console\Commands;
+namespace Njames\MetricRunner\Console\Commands;
 
 use Illuminate\Console\Command;
-use YourOrg\MetricRunner\Support\ClickHouseClient;
-use YourOrg\MetricRunner\Support\MetricRegistry;
+use Njames\MetricRunner\Support\ClickHouseClient;
+use Njames\MetricRunner\Support\MetricRegistry;
 
 class ValidateMetricsCommand extends Command
 {

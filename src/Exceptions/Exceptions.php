@@ -1,6 +1,6 @@
 <?php
 
-namespace YourOrg\MetricRunner\Exceptions;
+namespace Njames\MetricRunner\Exceptions;
 
 class MetricNotFoundException extends \RuntimeException {}
 class MetricNotApprovedException extends \RuntimeException {}

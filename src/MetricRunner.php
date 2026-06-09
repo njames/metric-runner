@@ -1,15 +1,15 @@
 <?php
 
-namespace YourOrg\MetricRunner;
+namespace Njames\MetricRunner;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Cache;
-use YourOrg\MetricRunner\DTO\MetricDefinition;
-use YourOrg\MetricRunner\DTO\MetricResult;
-use YourOrg\MetricRunner\Exceptions\MetricAccessDeniedException;
-use YourOrg\MetricRunner\Exceptions\MetricNotApprovedException;
-use YourOrg\MetricRunner\Support\ClickHouseClient;
-use YourOrg\MetricRunner\Support\MetricRegistry;
+use Njames\MetricRunner\DTO\MetricDefinition;
+use Njames\MetricRunner\DTO\MetricResult;
+use Njames\MetricRunner\Exceptions\MetricAccessDeniedException;
+use Njames\MetricRunner\Exceptions\MetricNotApprovedException;
+use Njames\MetricRunner\Support\ClickHouseClient;
+use Njames\MetricRunner\Support\MetricRegistry;
 
 class MetricRunner
 {

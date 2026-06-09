@@ -1,6 +1,6 @@
 <?php
 
-namespace YourOrg\MetricRunner\DTO;
+namespace Njames\MetricRunner\DTO;
 
 use Illuminate\Support\Collection;
 

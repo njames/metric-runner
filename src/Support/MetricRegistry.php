@@ -1,11 +1,11 @@
 <?php
 
-namespace YourOrg\MetricRunner\Support;
+namespace Njames\MetricRunner\Support;
 
 use Illuminate\Support\Str;
 use Symfony\Component\Finder\Finder;
-use YourOrg\MetricRunner\DTO\MetricDefinition;
-use YourOrg\MetricRunner\Exceptions\MetricNotFoundException;
+use Njames\MetricRunner\DTO\MetricDefinition;
+use Njames\MetricRunner\Exceptions\MetricNotFoundException;
 
 class MetricRegistry
 {

@@ -5,7 +5,7 @@ SQL-first analytics metric runner for Laravel + ClickHouse. Your data engineers 
 ## Installation
 
 ```bash
-composer require your-org/metric-runner
+composer require njames/metric-runner
 php artisan vendor:publish --tag=metric-runner-config
 ```
 
@@ -82,7 +82,7 @@ WHERE created_at >= {date_from:Date}
 ## Usage in PHP
 
 ```php
-use YourOrg\MetricRunner\Facades\MetricRunner;
+use Njames\MetricRunner\Facades\MetricRunner;
 
 // Basic usage — key is directory.filename
 $result = MetricRunner::run('revenue.by_month', [

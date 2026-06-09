@@ -1,9 +1,9 @@
 <?php
 
-namespace YourOrg\MetricRunner\Tests\Integration;
+namespace Njames\MetricRunner\Tests\Integration;
 
-use YourOrg\MetricRunner\Tests\TestCase;
-use YourOrg\MetricRunner\Support\ClickHouseClient;
+use Njames\MetricRunner\Tests\TestCase;
+use Njames\MetricRunner\Support\ClickHouseClient;
 
 class ClickHouseConnectionTest extends TestCase
 {

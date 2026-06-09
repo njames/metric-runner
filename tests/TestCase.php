@@ -1,10 +1,10 @@
 <?php
 
-namespace YourOrg\MetricRunner\Tests;
+namespace Njames\MetricRunner\Tests;
 
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use YourOrg\MetricRunner\MetricRunnerServiceProvider;
-use YourOrg\MetricRunner\Facades\MetricRunner;
+use Njames\MetricRunner\MetricRunnerServiceProvider;
+use Njames\MetricRunner\Facades\MetricRunner;
 
 abstract class TestCase extends OrchestraTestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace YourOrg\MetricRunner\Console\Commands;
+namespace Njames\MetricRunner\Console\Commands;
 
 use Illuminate\Console\Command;
-use YourOrg\MetricRunner\MetricRunner;
+use Njames\MetricRunner\MetricRunner;
 
 class RunMetricCommand extends Command
 {

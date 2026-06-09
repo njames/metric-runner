@@ -1,5 +1,5 @@
 {
-    "name": "your-org/metric-runner",
+    "name": "njames/metric-runner",
     "description": "SQL-first analytics metric runner for Laravel with ClickHouse support",
     "type": "library",
     "license": "MIT",
@@ -9,32 +9,51 @@
         "guzzlehttp/guzzle": "^7.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^9.0",
-        "pestphp/pest": "^3.0",
-        "pestphp/pest-plugin-laravel": "^3.0"
+        "orchestra/testbench": "^10.11",
+        "pestphp/pest": "^3.8"
     },
     "autoload": {
         "psr-4": {
-            "YourOrg\\MetricRunner\\": "src/"
+            "Njames\\MetricRunner\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "YourOrg\\MetricRunner\\Tests\\": "tests/"
+            "Njames\\MetricRunner\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/",
+            "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "YourOrg\\MetricRunner\\MetricRunnerServiceProvider"
+                "Njames\\MetricRunner\\MetricRunnerServiceProvider"
             ],
             "aliases": {
-                "MetricRunner": "YourOrg\\MetricRunner\\Facades\\MetricRunner"
+                "MetricRunner": "Njames\\MetricRunner\\Facades\\MetricRunner"
             }
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false
+        }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "scripts": {
+        "post-autoload-dump": [
+            "@clear",
+            "@prepare"
+        ],
+        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "prepare": "@php vendor/bin/testbench package:discover --ansi",
+        "build": "@php vendor/bin/testbench workbench:build --ansi",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@build",
+            "@php vendor/bin/testbench serve --ansi"
+        ]
+    }
 }
